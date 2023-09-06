@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jerrys-web-videos/static/css/main.29f80c53.css",
+    "main.js": "/Jerrys-web-videos/static/js/main.34adb7cd.js",
+    "index.html": "/Jerrys-web-videos/index.html",
+    "main.29f80c53.css.map": "/Jerrys-web-videos/static/css/main.29f80c53.css.map",
+    "main.34adb7cd.js.map": "/Jerrys-web-videos/static/js/main.34adb7cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29f80c53.css",
+    "static/js/main.34adb7cd.js"
+  ]
+}
