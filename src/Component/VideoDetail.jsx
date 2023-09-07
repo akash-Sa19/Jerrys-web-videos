@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 import { Link, useParams } from "react-router-dom";
 
 import { Videos } from "./";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "./utils/fetchFromAPI";
 
 const VideoDetail = () => {
   const { id } = useParams();
@@ -30,9 +30,9 @@ const VideoDetail = () => {
 
   return (
     <Box minHeight={`95vh`}>
-      <Stack direction={{ xs: "column", md: "row" }}>
+      <Stack direction={{ xs: "column", md: "row"  }} gap={3} marginX={4}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+          <Box sx={{ width: "100%", position: "sticky", top: "86px", mt: 1,}}>
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"

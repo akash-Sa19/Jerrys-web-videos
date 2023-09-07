@@ -3,16 +3,16 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { Videos, ChannelCard } from "./";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "./utils/fetchFromAPI";
 
 const ChannelDetail = () => {
   const [channelDetail, setChannelDetail] = useState(null);
   const [videos, setVideos] = useState([]);
   const { id } = useParams();
 
-  console.log("mango");
-  console.log(channelDetail);
-  console.log(videos);
+  // console.log("mango");
+  // console.log(channelDetail);
+  // console.log(videos);
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`)
     .then((data) =>

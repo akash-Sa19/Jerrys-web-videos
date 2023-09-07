@@ -5,9 +5,11 @@ import {VideoCard, ChannelCard} from './'
 const Videos = ({videos, direction}) => {
     // console.log(videos);
     if(!videos?.length) return 'Loading...'
-    
+
   return (
-    <Stack direction={direction || `row`} flexWrap={`wrap`} justifyContent={`start`} gap={2}>
+    <Stack direction={direction || `row`} flexWrap={`wrap`} justifyContent={`space-between`} 
+    gap={1}
+    >
         {videos.map((item, idx) => (
             <Box key={idx}>
               {/* {console.log(item)} */}

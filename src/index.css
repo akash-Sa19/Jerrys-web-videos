@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
 }
 
 .react-player {
-  height: 77vh !important;
+  height: 70vh !important;
   width: 100% !important;
 }
 
@@ -59,13 +59,24 @@ a {
 
   padding: 7px 15px;
   margin: 10px 0px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.3s ease;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+}
+.sidebar::-webkit-scrollbar {
+  /* width: 0px; */
+  display: none;
+  background: transparent;
 }
 
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
   }
 }
 

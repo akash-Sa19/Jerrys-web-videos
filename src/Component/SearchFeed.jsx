@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
 import { Videos} from "./index";
 
-import {fetchFromAPI} from '../utils/fetchFromAPI' 
+import {fetchFromAPI} from './utils/fetchFromAPI' 
 import { useParams } from "react-router-dom";
 
 
@@ -14,19 +14,30 @@ const SearchFeed = () => {
     .then((data) => setVideos(data.items))
   }, [searchTerm])
   return (
+    
     <Box
         p={2}
-        sx={{ overflow: "auto", height: "90vh", flex: 2 }}
+        sx={{ overflow: "auto", height: "90vh", flex: 2,  }}
+        width={'97%'}        
       >
         <Typography
           variant="h4"
           fontWeight={`bold`}
           mb={2}
-          sx={{ color: "white" }}
+          sx={{ color: "black" }}
         >
           Search Results for: <span style={{ color: "#f31503" }}>{searchTerm}</span>
         </Typography>
-        <Videos videos={videos} />
+        <Stack direction='row' 
+        sx={{width: '100%',
+        //  border: 'solid red 1px',
+         display: 'flex',
+         flexDirection: 'row',
+         justifyContent: 'space-between',
+         alignItems: 'flex-start' }}>
+          
+        <Videos videos={videos}  />
+        </Stack>
       </Box>
   );
 };
